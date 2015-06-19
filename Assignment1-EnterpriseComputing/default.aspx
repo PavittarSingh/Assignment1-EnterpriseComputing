@@ -16,8 +16,17 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css" />
     <link rel="stylesheet" href="main.css" />
+     <!--website Icon -->
+    <link rel="shortcut icon" href="Images/icon.ico" />
 </head>
 <body>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav">
+                                <li><a href="/">Home</a></li>
+                                <li><a href="http://pavittarsingh.me">Contact</a></li>
+                            </ul>
+        </div>
+
     <div class="container">
         <form id="form1" runat="server" class="form-horizontal">
             <h1 class="text-center">Game Calculator</h1>
@@ -26,6 +35,7 @@
             <h4>Note: Please fill all options for output. </h4>
             <div class="container-fluid">
                 <div class="row">
+                    
                     <!-- Game 1 inputs -->
                     <div class="col-sm-3 col-md-3">
                         <div class="well">
@@ -306,6 +316,8 @@
                 </asp:Panel>
             </div>
 
+
+
         </form>
         <!--Footer-->
         <footer>
@@ -317,6 +329,16 @@
 
 
         </footer>
+        <div class="col-md-4">
+                    <ul class="list-inline quicklinks">
+                        <li>
+                            <a href="#">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="#">Terms of Use</a>
+                        </li>
+                    </ul>
+                </div>
     </div>
 </body>
 </html>

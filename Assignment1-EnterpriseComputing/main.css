@@ -18,3 +18,13 @@ footer {
    font-family:'MS Gothic';
 }
 
+.navbar-nav{
+   margin-left:50px;
+   font-family:Gautami;
+   font-size:20px;
+   position:fixed;
+}
+
+.quicklinks{
+
+}

@@ -76,6 +76,7 @@
     <Content Include="default.aspx" />
     <Content Include="GameCalculator.csproj" />
     <Content Include="Global.asax" />
+    <Content Include="Images\icon.ico" />
     <Content Include="main.css" />
     <Content Include="Web.config" />
   </ItemGroup>
