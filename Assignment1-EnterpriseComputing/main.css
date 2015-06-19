@@ -1,0 +1,20 @@
+﻿body {
+}
+
+div.well {
+    width: 260px;
+    height: 350px;
+    text-align: center;
+
+}
+h4{
+    text-align:center;
+}
+footer { 
+   display: block;
+   text-align:center;
+   padding-top: 60px; 
+   font-style:inherit;
+   font-family:'MS Gothic';
+}
+
