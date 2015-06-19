@@ -1,4 +1,5 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="default.aspx.cs" Inherits="GameCalculator._default" %>
+
 <!-- Name: Pavittar Singh
      Date: 6/19/2015-Friday
      Student: 200238210
@@ -12,9 +13,9 @@
 <head runat="server">
     <title>Game Calculator</title>
     <!-- Minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css"/>
-    <link rel="stylesheet" href="main.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="main.css" />
 </head>
 <body>
     <div class="container">
@@ -22,7 +23,7 @@
             <h1 class="text-center">Game Calculator</h1>
             <h2 class="text-center"><small>Georgian college</small></h2>
             <h3 class="text-center"><small>Entreprise Computing</small></h3>
-            <h4> Note: Please fill all options for output. </h4>
+            <h4>Note: Please fill all options for output. </h4>
             <div class="container-fluid">
                 <div class="row">
                     <!-- Game 1 inputs -->
@@ -31,43 +32,43 @@
                             <h3>Game 1</h3>
                             <div class="form-group">
                                 <!--radio button (WinOrLoss)-->
-                                <label for="rblResult1" class="col-sm-4 control-label">Result:</label>                               
+                                <label for="rblResult1" class="col-sm-4 control-label">Result:</label>
                                 <div class="col-sm-8">
                                     <asp:RadioButtonList ID="rblResult1" runat="server">
-                                    <asp:ListItem Value="Win" Text="Win"></asp:ListItem>
-                                    <asp:ListItem Value="Lose" Text="Lose"></asp:ListItem>
+                                        <asp:ListItem Value="Win" Text="Win"></asp:ListItem>
+                                        <asp:ListItem Value="Lose" Text="Lose"></asp:ListItem>
                                     </asp:RadioButtonList>
                                     <asp:RequiredFieldValidator ID="RequiredFieldValidator13" runat="server"
-                                    ErrorMessage="Required" ControlToValidate="rblResult1" Display="Dynamic"
-                                    CssClass="label label-default"></asp:RequiredFieldValidator>
-                                </div>                                                                    
+                                        ErrorMessage="Required" ControlToValidate="rblResult1" Display="Dynamic"
+                                        CssClass="label label-default"></asp:RequiredFieldValidator>
+                                </div>
                             </div>
                             <div>
                                 <!-- scored textbox -->
                                 <label for="txtGame1Scored">Scored: </label>
-                                <asp:TextBox ID="txtGame1Scored" runat="server" required ="" type="number" CausesValidation="true"></asp:TextBox>    
+                                <asp:TextBox ID="txtGame1Scored" runat="server" required="" type="number" CausesValidation="true"></asp:TextBox>
                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server"
                                     ErrorMessage="Required" ControlToValidate="txtGame1Scored" Display="Dynamic"
                                     CssClass="label label-default"></asp:RequiredFieldValidator>
                                 <asp:RangeValidator ID="RangeValidator1" runat="server"
                                     ErrorMessage="Enter a number greater than 0" ControlToValidate="txtGame1Scored"
                                     Type="Double" MinimumValue="0.01" MaximumValue="9999" Display="Dynamic"
-                                    CssClass="label label-default"></asp:RangeValidator>  
+                                    CssClass="label label-default"></asp:RangeValidator>
                                 <asp:CompareValidator ID="compareValidator1" runat="server" ControlToCompare="txtGame1Allowed" Operator="NotEqual"
                                     ErrorMessage="Points scored cannot be the same as points allowed" ControlToValidate="txtGame1Scored"
-                                    Display="Dynamic" CssClass="label label-default"></asp:CompareValidator>                                  
+                                    Display="Dynamic" CssClass="label label-default"></asp:CompareValidator>
                             </div>
                             <div>
                                 <!-- allowed textbox -->
                                 <label for="txtGame1Allowed">Allowed: </label>
-                                 <asp:TextBox ID="txtGame1Allowed" runat="server" required type="number"></asp:TextBox>
+                                <asp:TextBox ID="txtGame1Allowed" runat="server" required type="number"></asp:TextBox>
                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server"
                                     ErrorMessage="Required" ControlToValidate="txtGame1Allowed" Display="Dynamic"
                                     CssClass="label label-default"></asp:RequiredFieldValidator>
                                 <asp:RangeValidator ID="RangeValidator2" runat="server"
                                     ErrorMessage="Enter a number greater than 0" ControlToValidate="txtGame1Allowed"
                                     Type="Double" MinimumValue="0.01" MaximumValue="9999" Display="Dynamic"
-                                    CssClass="label label-default"></asp:RangeValidator> 
+                                    CssClass="label label-default"></asp:RangeValidator>
                             </div>
                             <div>
                                 <!-- spectators textbox -->
@@ -79,8 +80,8 @@
                                 <asp:RangeValidator ID="RangeValidator3" runat="server"
                                     ErrorMessage="Enter a number greater than or equal to 0" ControlToValidate="txtGame1Spectators"
                                     Type="Double" MinimumValue="0" MaximumValue="99999" Display="Dynamic"
-                                    CssClass="label label-default"></asp:RangeValidator> 
-                            </div> 
+                                    CssClass="label label-default"></asp:RangeValidator>
+                            </div>
                         </div>
                     </div>
                     <!-- Game 2 inputs -->
@@ -89,17 +90,17 @@
                             <h3>Game 2</h3>
                             <div class="form-group">
                                 <!-- radio button (WinOrLoss) -->
-                                <label for="rblResult2" class="col-sm-4 control-label">Result: </label>                               
+                                <label for="rblResult2" class="col-sm-4 control-label">Result: </label>
                                 <div class="col-sm-8">
                                     <asp:RadioButtonList ID="rblResult2" runat="server">
-                                    <asp:ListItem Value="Win" Text="Win"></asp:ListItem>
-                                    <asp:ListItem Value="Lose" Text="Lose"></asp:ListItem>
+                                        <asp:ListItem Value="Win" Text="Win"></asp:ListItem>
+                                        <asp:ListItem Value="Lose" Text="Lose"></asp:ListItem>
                                     </asp:RadioButtonList>
                                     <asp:RequiredFieldValidator ID="RequiredFieldValidator14" runat="server"
-                                    ErrorMessage="Required" ControlToValidate="rblResult2" Display="Dynamic"
-                                    CssClass="label label-default"></asp:RequiredFieldValidator>
-                                </div>    
-                                                                
+                                        ErrorMessage="Required" ControlToValidate="rblResult2" Display="Dynamic"
+                                        CssClass="label label-default"></asp:RequiredFieldValidator>
+                                </div>
+
                             </div>
                             <div>
                                 <!-- scored textbox -->
@@ -111,22 +112,22 @@
                                 <asp:RangeValidator ID="RangeValidator4" runat="server"
                                     ErrorMessage="Enter a number greater than 0" ControlToValidate="txtGame2Scored"
                                     Type="Double" MinimumValue="0.01" MaximumValue="9999" Display="Dynamic"
-                                    CssClass="label label-default"></asp:RangeValidator>     
+                                    CssClass="label label-default"></asp:RangeValidator>
                                 <asp:CompareValidator ID="compareValidator2" runat="server" ControlToCompare="txtGame2Allowed" Operator="NotEqual"
                                     ErrorMessage="Points scored cannot be the same as points allowed" ControlToValidate="txtGame2Scored"
-                                    Display="Dynamic" CssClass="label label-default"></asp:CompareValidator>                                    
+                                    Display="Dynamic" CssClass="label label-default"></asp:CompareValidator>
                             </div>
                             <div>
                                 <!-- allowed textbox -->
                                 <label for="txtGame2Allowed">Allowed: </label>
-                                 <asp:TextBox ID="txtGame2Allowed" runat="server" required type="number"></asp:TextBox>
+                                <asp:TextBox ID="txtGame2Allowed" runat="server" required type="number"></asp:TextBox>
                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server"
                                     ErrorMessage="Required" ControlToValidate="txtGame2Allowed" Display="Dynamic"
                                     CssClass="label label-default"></asp:RequiredFieldValidator>
                                 <asp:RangeValidator ID="RangeValidator5" runat="server"
                                     ErrorMessage="Enter a number greater than 0" ControlToValidate="txtGame2Allowed"
                                     Type="Double" MinimumValue="0.01" MaximumValue="9999" Display="Dynamic"
-                                    CssClass="label label-default"></asp:RangeValidator> 
+                                    CssClass="label label-default"></asp:RangeValidator>
                             </div>
                             <div>
                                 <!-- spectators textbox -->
@@ -138,8 +139,8 @@
                                 <asp:RangeValidator ID="RangeValidator6" runat="server"
                                     ErrorMessage="Enter a number greater than or equal to 0" ControlToValidate="txtGame2Spectators"
                                     Type="Double" MinimumValue="0" MaximumValue="99999" Display="Dynamic"
-                                    CssClass="label label-default"></asp:RangeValidator> 
-                            </div> 
+                                    CssClass="label label-default"></asp:RangeValidator>
+                            </div>
                         </div>
                     </div>
                     <!-- Game 3 inputs -->
@@ -148,44 +149,44 @@
                             <h3>Game 3</h3>
                             <div class="form-group">
                                 <!-- radio button (WinOrLoss) -->
-                                <label for="rblResult3" class="col-sm-4 control-label">Result: </label>                                
+                                <label for="rblResult3" class="col-sm-4 control-label">Result: </label>
                                 <div class="col-sm-8">
                                     <asp:RadioButtonList ID="rblResult3" runat="server">
-                                    <asp:ListItem Value="Win" Text="Win"></asp:ListItem>
-                                    <asp:ListItem Value="Lose" Text="Lose"></asp:ListItem>
+                                        <asp:ListItem Value="Win" Text="Win"></asp:ListItem>
+                                        <asp:ListItem Value="Lose" Text="Lose"></asp:ListItem>
                                     </asp:RadioButtonList>
                                     <asp:RequiredFieldValidator ID="RequiredFieldValidator15" runat="server"
-                                    ErrorMessage="Required" ControlToValidate="rblResult3" Display="Dynamic"
-                                    CssClass="label label-default"></asp:RequiredFieldValidator>
-                                </div>    
-                                                                
+                                        ErrorMessage="Required" ControlToValidate="rblResult3" Display="Dynamic"
+                                        CssClass="label label-default"></asp:RequiredFieldValidator>
+                                </div>
+
                             </div>
                             <div>
                                 <!-- scored textbox -->
                                 <label for="txtGame3Scored">Scored: </label>
-                                <asp:TextBox ID="txtGame3Scored" runat="server" required type="number"></asp:TextBox>  
+                                <asp:TextBox ID="txtGame3Scored" runat="server" required type="number"></asp:TextBox>
                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server"
                                     ErrorMessage="Required" ControlToValidate="txtGame3Scored" Display="Dynamic"
                                     CssClass="label label-default"></asp:RequiredFieldValidator>
                                 <asp:RangeValidator ID="RangeValidator7" runat="server"
                                     ErrorMessage="Enter a number greater than 0" ControlToValidate="txtGame3Scored"
                                     Type="Double" MinimumValue="0.01" MaximumValue="9999" Display="Dynamic"
-                                    CssClass="label label-default"></asp:RangeValidator>   
+                                    CssClass="label label-default"></asp:RangeValidator>
                                 <asp:CompareValidator ID="compareValidator3" runat="server" ControlToCompare="txtGame3Allowed" Operator="NotEqual"
                                     ErrorMessage="Points scored cannot be the same as points allowed" ControlToValidate="txtGame3Scored"
-                                    Display="Dynamic" CssClass="label label-default"></asp:CompareValidator>      
+                                    Display="Dynamic" CssClass="label label-default"></asp:CompareValidator>
                             </div>
                             <div>
                                 <!-- allowed textbox -->
                                 <label for="txtGame3Allowed">Allowed: </label>
-                                 <asp:TextBox ID="txtGame3Allowed" runat="server" required type="number"></asp:TextBox>
+                                <asp:TextBox ID="txtGame3Allowed" runat="server" required type="number"></asp:TextBox>
                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server"
                                     ErrorMessage="Required" ControlToValidate="txtGame3Allowed" Display="Dynamic"
                                     CssClass="label label-default"></asp:RequiredFieldValidator>
                                 <asp:RangeValidator ID="RangeValidator8" runat="server"
                                     ErrorMessage="Enter a number greater than 0" ControlToValidate="txtGame3Allowed"
                                     Type="Double" MinimumValue="0.01" MaximumValue="9999" Display="Dynamic"
-                                    CssClass="label label-default"></asp:RangeValidator> 
+                                    CssClass="label label-default"></asp:RangeValidator>
                             </div>
                             <div>
                                 <!-- Spectators textbox -->
@@ -197,8 +198,8 @@
                                 <asp:RangeValidator ID="RangeValidator9" runat="server"
                                     ErrorMessage="Enter a number greater than or equal to 0" ControlToValidate="txtGame3Spectators"
                                     Type="Double" MinimumValue="0" MaximumValue="99999" Display="Dynamic"
-                                    CssClass="label label-default"></asp:RangeValidator> 
-                            </div> 
+                                    CssClass="label label-default"></asp:RangeValidator>
+                            </div>
                         </div>
                     </div>
                     <!-- Game 4 inputs -->
@@ -210,40 +211,40 @@
                                 <!-- radio button (WinOrLoss) -->
                                 <div class="col-sm-8">
                                     <asp:RadioButtonList ID="rblResult4" runat="server">
-                                    <asp:ListItem Value="Win" Text="Win"></asp:ListItem>
-                                    <asp:ListItem Value="Lose" Text="Lose"></asp:ListItem>
+                                        <asp:ListItem Value="Win" Text="Win"></asp:ListItem>
+                                        <asp:ListItem Value="Lose" Text="Lose"></asp:ListItem>
                                     </asp:RadioButtonList>
                                     <asp:RequiredFieldValidator ID="RequiredFieldValidator16" runat="server"
-                                    ErrorMessage="Required" ControlToValidate="rblResult4" Display="Dynamic"
-                                    CssClass="label label-default"></asp:RequiredFieldValidator>
-                                </div>                                                                   
+                                        ErrorMessage="Required" ControlToValidate="rblResult4" Display="Dynamic"
+                                        CssClass="label label-default"></asp:RequiredFieldValidator>
+                                </div>
                             </div>
                             <div>
                                 <!-- scored textbox -->
                                 <label for="txtGame4Scored">Scored: </label>
-                                <asp:TextBox ID="txtGame4Scored" runat="server" required ="" type="number"></asp:TextBox>  
+                                <asp:TextBox ID="txtGame4Scored" runat="server" required="" type="number"></asp:TextBox>
                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator10" runat="server"
                                     ErrorMessage="Required" ControlToValidate="txtGame4Scored" Display="Dynamic"
                                     CssClass="label label-default"></asp:RequiredFieldValidator>
                                 <asp:RangeValidator ID="RangeValidator10" runat="server"
                                     ErrorMessage="Enter a number greater than 0" ControlToValidate="txtGame4Scored"
                                     Type="Double" MinimumValue="0.01" MaximumValue="9999" Display="Dynamic"
-                                    CssClass="label label-default"></asp:RangeValidator>     
+                                    CssClass="label label-default"></asp:RangeValidator>
                                 <asp:CompareValidator ID="compareValidator4" runat="server" ControlToCompare="txtGame4Allowed" Operator="NotEqual"
                                     ErrorMessage="Points scored cannot be the same as points allowed" ControlToValidate="txtGame4Scored"
-                                    Display="Dynamic" CssClass="label label-default"></asp:CompareValidator>    
+                                    Display="Dynamic" CssClass="label label-default"></asp:CompareValidator>
                             </div>
                             <div>
                                 <!-- allowed textbox -->
                                 <label for="txtGame4Allowed">Allowed: </label>
-                                 <asp:TextBox ID="txtGame4Allowed" runat="server" required type="number"></asp:TextBox>
+                                <asp:TextBox ID="txtGame4Allowed" runat="server" required type="number"></asp:TextBox>
                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator11" runat="server"
                                     ErrorMessage="Required" ControlToValidate="txtGame4Allowed" Display="Dynamic"
                                     CssClass="label label-default"></asp:RequiredFieldValidator>
                                 <asp:RangeValidator ID="RangeValidator11" runat="server"
                                     ErrorMessage="Enter a number greater than 0" ControlToValidate="txtGame4Allowed"
                                     Type="Double" MinimumValue="0.01" MaximumValue="9999" Display="Dynamic"
-                                    CssClass="label label-default"></asp:RangeValidator> 
+                                    CssClass="label label-default"></asp:RangeValidator>
                             </div>
                             <div>
                                 <!-- spectators textbox -->
@@ -255,15 +256,15 @@
                                 <asp:RangeValidator ID="RangeValidator12" runat="server"
                                     ErrorMessage="Enter a number greater than or equal to 0" ControlToValidate="txtGame4Spectators"
                                     Type="Double" MinimumValue="0" MaximumValue="99999" Display="Dynamic"
-                                    CssClass="label label-default"></asp:RangeValidator> 
-                            </div> 
+                                    CssClass="label label-default"></asp:RangeValidator>
+                            </div>
                         </div>
                     </div>
-             </div> 
+                </div>
                 <div class="text-center">
-                    <!-- Submit button --> 
-                <asp:Button ID="btnCalculate" CssClass="btn btn-primary" runat="server" Text="Calculate Totals" OnClick="btnCalculate_Click"/>
-                </div>                
+                    <!-- Submit button -->
+                    <asp:Button ID="btnCalculate" CssClass="btn btn-primary" runat="server" Text="Calculate Totals" OnClick="btnCalculate_Click" />
+                </div>
             </div>
 
             <div class="text-center">
@@ -300,19 +301,22 @@
                     </div>
                     <div>
                         <label for="lblAvgAttendance">Average Attendance: </label>
-                    <asp:Label ID="lblAvgAttendance" runat="server" />
-                </div>
-            </asp:Panel>
+                        <asp:Label ID="lblAvgAttendance" runat="server" />
+                    </div>
+                </asp:Panel>
             </div>
-            
+
         </form>
         <!--Footer-->
-   <footer>
-  <p>Pavittar Singh</p>
-  <p> Copyright2015: <a href="http://pavittarsingh.me">
-  pavittarsingh.me</a>.</p>
-</footer>
+        <footer>
+            <p>Pavittar Singh</p>
+            <p>
+                Copyright2015: <a href="http://pavittarsingh.me">pavittarsingh.me</a>.
+            </p>
+            <a href="http://www.facebook.com/pavsraan">Follow me on facebook</a>
 
+
+        </footer>
     </div>
 </body>
 </html>
