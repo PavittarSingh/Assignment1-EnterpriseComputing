@@ -13,6 +13,8 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css" />
         <link rel="stylesheet" href="contact.css" />
         <link href="main.css" rel="stylesheet" />
+
+        <script src="js/contact_me.js"></script>
         <div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                             <ul class="nav navbar-nav">
@@ -22,33 +24,51 @@
                             </ul>
         </div>
 
-            <div class="container">
-                <div class="col-md-5">
-                    <div class="form-area">
-                        <form role="form">
-                            <br style="clear: both">
-                            <h3 style="margin-bottom: 25px; text-align: center;">Contact Form</h3>
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
+             <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Contact Us</h2>
+                    <h3 class="section-subheading text-muted">Say Hello !!! .</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <form name="sentMessage" id="contactForm" novalidate>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Your Email *" id="email" required data-validation-required-message="Please enter your email address.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input type="tel" class="form-control" placeholder="Your Phone *" id="phone" required data-validation-required-message="Please enter your phone number.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
                             </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="email" name="email" placeholder="Email" required>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <textarea class="form-control" placeholder="Your Message *" id="message" required data-validation-required-message="Please enter a message."></textarea>
+                                    <p class="help-block text-danger"></p>
+                                </div>
                             </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="mobile" name="mobile" placeholder="Mobile Number" required>
+                            <div class="clearfix"></div>
+                            <div class="col-lg-12 text-center">
+                                <div id="success"></div>
+                                <button type="submit" class="btn btn-xl">Send Message</button>
                             </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required>
-                            </div>
-                            <div class="form-group">
-                                <textarea class="form-control" type="textarea" id="message" placeholder="Message" maxlength="140" rows="7"></textarea>
-                                <span class="help-block">
-                                    <p id="characterLeft" class="help-block ">You have reached the limit</p>
-                                </span>
-                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                            <button type="button" id="submit" name="submit" class="btn btn-primary pull-right">Submit Form</button>
-                        </form>
                     </div>
                 </div>
             </div>
@@ -63,7 +83,7 @@
 
         </footer>
         <div class="col-md-4">
-                    <ul class="list-inline quicklinks1">
+                    <ul class="list-inline quicklinks2">
                         <li>
                             <a href="#">Privacy Policy</a>
                         </li>
