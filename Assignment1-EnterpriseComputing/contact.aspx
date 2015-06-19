@@ -8,21 +8,21 @@
 </head>
 <body>
     <form id="form1" runat="server">
-
+           <!-- Minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css" />
         <link rel="stylesheet" href="contact.css" />
         <link href="main.css" rel="stylesheet" />
-
-        <script src="js/contact_me.js"></script>
+        <!-- Java Script Contect page -->
+        <script src="mail/contact_me.js"></script>
         <div>
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                            <ul class="nav navbar-nav">
-                                <li><a href="/">Home</a></li>
-                                <li><a href="contact.aspx">Contact</a></li>
-                                
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-11">
+                            <ul class="nav navbar-nav1">
+                                <li><a href="default.aspx">Back</a></li>    
                             </ul>
         </div>
+
 
              <!-- Contact Section -->
     <section id="contact">
@@ -70,8 +70,7 @@
     </section>
 
                     </div>
-                </div>
-            </div>
+               
             <!--Footer-->
         <footer>
             <p>Pavittar Singh</p>
@@ -82,6 +81,8 @@
 
 
         </footer>
+            <!-- Privacy and terms -->
+
         <div class="col-md-4">
                     <ul class="list-inline quicklinks2">
                         <li>
@@ -92,7 +93,7 @@
                         </li>
                     </ul>
                 </div>
-        </div>
+       
     </form>
 </body>
 </html>

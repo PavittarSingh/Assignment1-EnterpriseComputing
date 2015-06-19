@@ -69,7 +69,6 @@
   <ItemGroup>
     <Content Include="contact.aspx" />
     <Content Include="contact.css" />
-    <Content Include="contact_me.js" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -83,6 +82,7 @@
     <Content Include="GameCalculator.csproj" />
     <Content Include="Global.asax" />
     <Content Include="Images\icon.ico" />
+    <Content Include="mail\contact_me.js" />
     <Content Include="mail\contact_me.php" />
     <Content Include="main.css" />
     <Content Include="Web.config" />
